@@ -13,6 +13,14 @@
 		382815B92A66357F00989333 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 382815B82A66357F00989333 /* Preview Assets.xcassets */; };
 		382815BB2A66357F00989333 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382815BA2A66357F00989333 /* Persistence.swift */; };
 		382815BE2A66357F00989333 /* MRTJ.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 382815BC2A66357F00989333 /* MRTJ.xcdatamodeld */; };
+		382815C62A66365600989333 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 382815C52A66365600989333 /* FirebaseAnalytics */; };
+		382815C82A66365600989333 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 382815C72A66365600989333 /* FirebaseAnalyticsSwift */; };
+		382815CA2A66365600989333 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 382815C92A66365600989333 /* FirebaseAuth */; };
+		382815CC2A66365600989333 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 382815CB2A66365600989333 /* FirebaseDatabase */; };
+		382815CE2A66365600989333 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 382815CD2A66365600989333 /* FirebaseDatabaseSwift */; };
+		382815D02A66365600989333 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 382815CF2A66365600989333 /* FirebaseMessaging */; };
+		382815D22A66365600989333 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 382815D12A66365600989333 /* FirebaseStorage */; };
+		382815D62A66368000989333 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 382815D52A66368000989333 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +31,9 @@
 		382815B82A66357F00989333 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		382815BA2A66357F00989333 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		382815BD2A66357F00989333 /* MRTJ.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MRTJ.xcdatamodel; sourceTree = "<group>"; };
+		382815D32A66366700989333 /* MRTJ.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MRTJ.entitlements; sourceTree = "<group>"; };
+		382815D42A66366B00989333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		382815D52A66368000989333 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +41,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				382815D02A66365600989333 /* FirebaseMessaging in Frameworks */,
+				382815CE2A66365600989333 /* FirebaseDatabaseSwift in Frameworks */,
+				382815C82A66365600989333 /* FirebaseAnalyticsSwift in Frameworks */,
+				382815CA2A66365600989333 /* FirebaseAuth in Frameworks */,
+				382815D22A66365600989333 /* FirebaseStorage in Frameworks */,
+				382815CC2A66365600989333 /* FirebaseDatabase in Frameworks */,
+				382815C62A66365600989333 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +73,9 @@
 		382815B02A66357F00989333 /* MRTJ */ = {
 			isa = PBXGroup;
 			children = (
+				382815D42A66366B00989333 /* Info.plist */,
+				382815D52A66368000989333 /* GoogleService-Info.plist */,
+				382815D32A66366700989333 /* MRTJ.entitlements */,
 				382815B12A66357F00989333 /* MRTJApp.swift */,
 				382815B32A66357F00989333 /* ContentView.swift */,
 				382815B52A66357F00989333 /* Assets.xcassets */,
@@ -89,6 +110,15 @@
 			dependencies = (
 			);
 			name = MRTJ;
+			packageProductDependencies = (
+				382815C52A66365600989333 /* FirebaseAnalytics */,
+				382815C72A66365600989333 /* FirebaseAnalyticsSwift */,
+				382815C92A66365600989333 /* FirebaseAuth */,
+				382815CB2A66365600989333 /* FirebaseDatabase */,
+				382815CD2A66365600989333 /* FirebaseDatabaseSwift */,
+				382815CF2A66365600989333 /* FirebaseMessaging */,
+				382815D12A66365600989333 /* FirebaseStorage */,
+			);
 			productName = MRTJ;
 			productReference = 382815AE2A66357F00989333 /* MRTJ.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +147,9 @@
 				Base,
 			);
 			mainGroup = 382815A52A66357F00989333;
+			packageReferences = (
+				382815C42A66365600989333 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 382815AF2A66357F00989333 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,6 +166,7 @@
 			files = (
 				382815B92A66357F00989333 /* Preview Assets.xcassets in Resources */,
 				382815B62A66357F00989333 /* Assets.xcassets in Resources */,
+				382815D62A66368000989333 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,12 +306,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MRTJ/MRTJ.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MRTJ/Preview Content\"";
 				DEVELOPMENT_TEAM = GT493Z58L2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MRTJ/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -290,9 +326,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Jonathan.MRTJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -301,12 +340,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MRTJ/MRTJ.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MRTJ/Preview Content\"";
 				DEVELOPMENT_TEAM = GT493Z58L2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MRTJ/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -319,9 +360,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Jonathan.MRTJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -347,6 +391,55 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		382815C42A66365600989333 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		382815C52A66365600989333 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 382815C42A66365600989333 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		382815C72A66365600989333 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 382815C42A66365600989333 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		382815C92A66365600989333 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 382815C42A66365600989333 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		382815CB2A66365600989333 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 382815C42A66365600989333 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		382815CD2A66365600989333 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 382815C42A66365600989333 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		382815CF2A66365600989333 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 382815C42A66365600989333 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		382815D12A66365600989333 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 382815C42A66365600989333 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		382815BC2A66357F00989333 /* MRTJ.xcdatamodeld */ = {
