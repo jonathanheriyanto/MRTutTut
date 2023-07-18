@@ -20,7 +20,7 @@
 		382815CE2A66365600989333 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 382815CD2A66365600989333 /* FirebaseDatabaseSwift */; };
 		382815D02A66365600989333 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 382815CF2A66365600989333 /* FirebaseMessaging */; };
 		382815D22A66365600989333 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 382815D12A66365600989333 /* FirebaseStorage */; };
-		382815D62A66368000989333 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 382815D52A66368000989333 /* GoogleService-Info.plist */; };
+		382815D82A66394A00989333 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 382815D72A66394A00989333 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		382815BD2A66357F00989333 /* MRTJ.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MRTJ.xcdatamodel; sourceTree = "<group>"; };
 		382815D32A66366700989333 /* MRTJ.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MRTJ.entitlements; sourceTree = "<group>"; };
 		382815D42A66366B00989333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		382815D52A66368000989333 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		382815D72A66394A00989333 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				382815D42A66366B00989333 /* Info.plist */,
-				382815D52A66368000989333 /* GoogleService-Info.plist */,
+				382815D72A66394A00989333 /* GoogleService-Info.plist */,
 				382815D32A66366700989333 /* MRTJ.entitlements */,
 				382815B12A66357F00989333 /* MRTJApp.swift */,
 				382815B32A66357F00989333 /* ContentView.swift */,
@@ -165,8 +165,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				382815B92A66357F00989333 /* Preview Assets.xcassets in Resources */,
+				382815D82A66394A00989333 /* GoogleService-Info.plist in Resources */,
 				382815B62A66357F00989333 /* Assets.xcassets in Resources */,
-				382815D62A66368000989333 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
